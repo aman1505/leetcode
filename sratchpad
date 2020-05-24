@@ -1,0 +1,8 @@
+Input: candies = [2,3,5,1,3], extraCandies = 3
+Output: [true,true,true,false,true] 
+
+5
+
+num[i]+3 >= max
+
+true, true
