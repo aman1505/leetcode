@@ -6,11 +6,12 @@ class Solution:
         i=0
         while (i < len(nums)-1):
             if(nums[i]==nums[i+1]):
-                del(nums[i])
+                # del(nums[i])
+                nums.remove(nums[i])
                 # count+=1
             else:
                 i+=1
-        return len(nums)
+        return len(nums),nums
             
 
         # for i in range(len(nums)):
@@ -23,7 +24,7 @@ class Solution:
 
 
 if __name__ == "__main__":
-    nums = [1,1,2]
+    nums = [1,1,2,3,4,4,5,6,6,7]
     obj = Solution()
     result = obj.removeDuplicates(nums)
     print(result)

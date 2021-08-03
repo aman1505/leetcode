@@ -12,7 +12,6 @@ class Solution():
 
         for key,value in sorted_map.items():
             result.append(value)
-        print(sorted_map)
         return result 
 
 if __name__ == "__main__":

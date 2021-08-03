@@ -2,7 +2,7 @@ class Solution():
     def checkPalindrome(self,input: str)-> bool:
         transformed_input = input.replace(" ","").lower()
         for s in transformed_input:
-            if (ord(s) >= 97 and ord(s) <= 122) or (int(s) >= 0 and int(s) <= 9):
+            if (ord(s) >= 97 and ord(s) <= 122) or (ord(s) >= 48 and ord(s) <= 57):
                 pass
             else:
                 transformed_input=transformed_input.replace(s,"")   
