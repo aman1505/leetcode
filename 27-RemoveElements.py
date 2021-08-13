@@ -1,21 +1,12 @@
 class Solution():
-    def removeElements(self, nums, val):
-        
-        # for i in range(len(nums)): 
-        #     # print(str(num)+"-----"+str(nums))
-        #     if (val==nums[i]):
-        #         print("val--"+str(val)+"---"+"num--"+str(nums[i])) 
-        #         nums.remove(nums[i])
-        # return len(nums), nums
+    def removeElements(self, nums, val):        
         i=0
         while(i<len(nums)):
-            print(i)
             if (val==nums[i]):
-                nums.remove(nums[i])
-                print(len(nums))
-                print(nums)
-            i+=1
-        return len(nums), nums
+                nums.remove(nums[i])                
+            else:
+                i+=1
+        return i
 
 
 if __name__ == "__main__":
